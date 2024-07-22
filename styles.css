@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 100vh;
+  min-height: 80vh;
+  background-color: var(--grey-900);
+  font-family: "Inter", sans-serif;
+}
+body .profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.9em;
+  background-color: var(--grey-800);
+  padding: 0.5em 0 0.5em 0;
+  margin: 5em 2em 5em 3em;
+}
+body .profile-container .profile-section {
+  margin: 1em;
+  text-align: center;
+}
+body .profile-container .profile-section .profile-section-img {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 5em;
+  height: 5em;
+  margin-bottom: 1em;
+}
+body .profile-container .profile-section .profile-section-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+body .profile-container .profile-section .profile {
+  text-align: center;
+}
+body .profile-container .profile-section .profile .name {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+body .profile-container .profile-section .profile .addres {
+  margin-top: 5px;
+  color: var(--green);
+  font-size: 0.9rem;
+}
+body .profile-container .profile-section .profile .position {
+  color: var(--white);
+  font-size: 0.8em;
+  margin-top: 20px;
+}
+body .profile-container .profile-link {
+  width: 100%;
+}
+body .profile-container .profile-link ul {
+  list-style: none;
+  text-align: center;
+}
+body .profile-container .profile-link ul li {
+  margin: 1rem;
+  border-radius: 5px;
+  background-color: var(--grey-700);
+}
+body .profile-container .profile-link ul li:hover {
+  background-color: var(--green);
+  transition: 0.3s ease-in-out;
+}
+body .profile-container .profile-link ul li a.link {
+  display: block;
+  padding: 10px 15px;
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+}
+body .profile-container .profile-link ul li:active {
+  background-color: var(--green);
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+  }
+  body .profile-container {
+    width: 65%;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    margin-left: 280px;
+  }
+  body .profile-container {
+    width: 65%;
+    margin-left: 40%;
+  }
+}/*# sourceMappingURL=styles.css.map */
